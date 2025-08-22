@@ -2,7 +2,7 @@
 from fastapi import APIRouter, HTTPException, Depends, status, Query
 from typing import List, Optional
 import logging
-
+from datetime import date
 from ..models.book import Book, BookCreate, BookUpdate, BookStatus
 from ..services.external_apis import BookEnrichmentService
 from ..services.cache import CacheService

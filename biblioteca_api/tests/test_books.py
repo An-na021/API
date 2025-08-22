@@ -5,7 +5,7 @@ from fastapi.testclient import TestClient
 from unittest.mock import Mock, patch
 from app.main import app
 from app.models.book import BookCreate, BookStatus
-
+from typing import List
 # CONFIGURAÇÃO DE TESTE
 client = TestClient(app)
 
